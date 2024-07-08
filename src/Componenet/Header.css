@@ -1,0 +1,57 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    height: 60px;  /* Set a leaner height */
+    background: linear-gradient(to right, #fff 0%, #000 100%);  /* White to black gradient */
+  }
+  
+  .header h2 {
+    margin: 0;
+    color: #000000;  /* Ensure heading text is white */
+    font-size: 1.2rem;  /* Adjust heading size as needed */
+  }
+  
+  .header nav {
+    display: flex;  /* Align social links horizontally */
+  }
+  
+  .header nav a {
+    margin-left: 1rem;  /* Space between social icons */
+    color: #fff;  /* Ensure social icons are white */
+  }
+  
+  .header nav a:hover {
+    color: #ddd;  /* Adjust hover color for social icons */
+  }
+  /* Existing styles for .header, .header h2, .header nav, .header nav a */
+
+/* Media query for small devices */
+@media (max-width: 468px) {
+  .header {
+    flex-direction: row; /* Stack elements vertically on small screens */
+    align-items: center; /* Center elements vertically */
+  }
+  
+  .header h2 {
+    margin-bottom: 1rem; /* Add space after heading on small screens */
+  }
+  
+  .header nav {
+    flex-direction: column; /* Stack social links vertically on small screens */
+    margin-top: 0rem; /* Add space after heading for social links */
+  }
+  
+  .header nav a {
+    margin-left: 0; /* Remove horizontal spacing between social links */
+  }
+}
+/* Media query for very small devices */
+@media (max-width: 380px) {
+  header .fa-instagram,
+  header .fa-linkedin,
+  header .fa-github {
+    font-size: 6px; /* Adjust font size for icons (optional) */
+  }
+}
